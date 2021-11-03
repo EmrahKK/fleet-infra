@@ -10,7 +10,7 @@ spec:
   values:
     ingress:
       hosts:
-        - host: echo-server.production
+        - host: echo-server.lcwdev.com
           paths:
             - path: /
               pathType: ImplementationSpecific
