@@ -3,6 +3,7 @@ kind: Kustomization
 metadata:
   name: echosrv
 spec:
+  interval: 10m0s
   sourceRef:
     kind: GitRepository
     name: echosrv
