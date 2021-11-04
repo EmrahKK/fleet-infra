@@ -13,8 +13,8 @@ spec:
   path: ./apps/rke2masterclstr
   prune: true
   validation: client
-  # healthChecks:
-  #   - apiVersion: helm.toolkit.fluxcd.io/v1beta1
-  #     kind: HelmRelease
-  #     name: echo-server
-  #     namespace: echo-server
+  healthChecks:
+    - apiVersion: helm.toolkit.fluxcd.io/v1beta1
+      kind: HelmRelease
+      name: echo-server
+      namespace: echo-server
