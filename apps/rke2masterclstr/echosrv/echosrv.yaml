@@ -1,9 +1,0 @@
-apiVersion: source.toolkit.fluxcd.io/v1beta1
-kind: GitRepository
-metadata:
-  name: echosrv
-spec:
-  interval: 30s
-  ref:
-    branch: master
-  url: https://github.com/EmrahKK/echo-server.git
