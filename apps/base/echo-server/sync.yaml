@@ -18,8 +18,7 @@ metadata:
   namespace: echo-server
 spec:
   interval: 1m0s
-  path: ./deploy
-  prune: false
+  prune: true
   serviceAccountName: echo-server
   sourceRef:
     kind: GitRepository

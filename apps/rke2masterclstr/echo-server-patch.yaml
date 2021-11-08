@@ -4,4 +4,6 @@ metadata:
   name: echo-server
   namespace: echo-server
 spec:
-  path: ./production
+  path: ./deploy/production
+# patchesStrategicMerge:
+#   - echo-server-patch.yaml
