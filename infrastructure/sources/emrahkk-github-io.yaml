@@ -1,7 +1,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository
 metadata:
-  name: echo-server
+  name: emrahkk-github-io
 spec:
   interval: 5m
-  url: https://ealenn.github.io/charts
+  url: https://emrahkk.github.io/helm/charts
