@@ -1,0 +1,27 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: echo-server
+  namespace: echo-server
+spec:
+  interval: 1m0s
+  ref:
+    branch: master
+  url: https://github.com/EmrahKK/echo-server
+
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: echo-server
+  namespace: echo-server
+spec:
+  interval: 1m0s
+  path: ./deploy
+  prune: false
+  serviceAccountName: echo-server
+  sourceRef:
+    kind: GitRepository
+    name: echo-server
+
