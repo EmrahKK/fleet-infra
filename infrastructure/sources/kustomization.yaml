@@ -4,3 +4,4 @@ namespace: flux-system
 resources:
   - bitnami.yaml
   - echo-server.yaml
+  - mymharbor.yaml
