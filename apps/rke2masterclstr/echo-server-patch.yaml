@@ -1,9 +1,0 @@
-apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
-kind: Kustomization
-metadata:
-  name: echo-server
-  namespace: echo-server
-spec:
-  path: ./deploy/production
-# patchesStrategicMerge:
-#   - echo-server-patch.yaml
